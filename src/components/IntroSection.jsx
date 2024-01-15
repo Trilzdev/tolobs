@@ -3,6 +3,7 @@ import waterlarge from '../../public/waterdrop-large.png'
 import watersmall from '../../public/waterdrop-small.png'
 import watermedium from '../../public/waterdrop-medium.png'
 import {motion} from 'framer-motion'
+import { Link } from 'react-router-dom'
 const IntroSection = () => {
     return (
         <div className='  px-96 max-md:px-8 max-lg:px-16 max-2xl:px-32 max-sm:px-4  max-xl:px-16 flex max-md:flex-col justify-between max-md:items-center max-md:gap-16 py-16 relative'>
@@ -23,7 +24,7 @@ const IntroSection = () => {
                     OF EXPERIENCE, WE MAKE SURE <br />
                     THINGS ALWAYS GO RIGHT. <br />
                 </motion.p>
-                <motion.a initial={{x:'100px'}} animate={{x:'0px'}} transition={{delay:1,duration:1}} href="/our-company" className='border-2 border-yellow-400  text-yellow-400 w-fit px-6 py-2 text-2xl max-sm:text-xl'>ABOUT US</motion.a>
+                <motion.div initial={{x:'100px'}} animate={{x:'0px'}} transition={{delay:1,duration:1}} ><Link className='border-2 border-yellow-400  text-yellow-400 w-fit px-6 py-2 text-2xl max-sm:text-xl' to={'/our-company'}>ABOUT US</Link></motion.div>
             </div>
             <div className='intro_images w-max px-16  relative'>
                     <motion.div initial={{y:'-100px',opacity:0.2}} animate={{y:'0px',opacity:1}} transition={{duration:1}} className='w-[400px] max-md:w-[300px] max-sm:w-[260px] drop'>

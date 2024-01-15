@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '../../public/logo.png'
 import { IoMailSharp } from "react-icons/io5";
 import { FaPhone } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 const FooterComponent = () => {
   return (
     <footer className=' px-96 max-md:px-8 max-lg:px-16 max-2xl:px-32 max-sm:px-4  max-xl:px-16 py-16 flex flex-col gap-4'>
@@ -24,9 +25,9 @@ const FooterComponent = () => {
         </div>
       </div>
       <div className=' text-white text-sm'>
-        <a href="/policies" className='hover:underline'>
+        <Link to="/policies" className='hover:underline'>
           OUR POLICIES AND PROGRAMMES
-        </a>
+        </Link>
       </div>
     </footer>
   )

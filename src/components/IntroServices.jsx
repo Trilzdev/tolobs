@@ -4,6 +4,7 @@ import solutions from '../../public/solutions.png'
 import marine from '../../public/marine.png'
 import shipping from '../../public/shipping.png'
 import logistics from '../../public/logistics.png'
+import { Link } from 'react-router-dom'
 
 const IntroServices = () => {
   return (
@@ -14,7 +15,7 @@ const IntroServices = () => {
             <ServiceCard title={'SHIPPING'} image={shipping} text={'TOLOBS MARINE SERVICES SPECIALISES IN A COMPREHENSIVE RANGE OF SUPPLY CHAIN AND LOGISTICS SOLUTIONS.'}/>
             <ServiceCard title={'MARINE'} image={marine} text={'TOLOBS MARINE SPECIALISES IN STRATEGIC TIE-UPS THAT MARRY ITS CAPABILITIES IN SHIPPING, LOGISTICS AND MARINE WITH THE SPECIALIST SERVICES OF ITS PARTNERS.'}/>
         </div>
-        <a data-aos='fade-up' href="/services" className='border border-yellow-400  text-yellow-400 w-fit mx-auto px-6 py-2 text-xl'>OUR SERVICES</a>
+        <Link data-aos='fade-up' to="/services" className='border border-yellow-400  text-yellow-400 w-fit mx-auto px-6 py-2 text-xl'>OUR SERVICES</Link>
     </div>
   )
 }
