@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.custom-shape-divider-bottom-1704712485 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1704712485 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 84px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1704712485 .shape-fill {
+  fill: #C9DBDB;
+}
+.intro{
+  background: rgb(13,66,116);
+  background: linear-gradient(180deg, rgba(13,66,116,1) 0%, rgba(27,81,126,1) 8%, rgba(131,194,203,1) 100%);
+}
+.reverse-gradient{
+  background: rgb(201,219,219);
+  background: linear-gradient(180deg, rgba(201,219,219,1) 9%, rgba(83,143,168,1) 100%);
+}
+
+.appear{
+  animation: appearnimation 0.3s ease-in-out;
+}
+.appear_two{
+  animation: appearnimation 2s ease-in-out;
+}
+
+@keyframes appearnimation {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+.box{
+  box-shadow: 1px 9px 23px 10px rgba(0,0,0,0.57);
+  -webkit-box-shadow: 1px 9px 23px 10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 1px 9px 23px 10px rgba(0,0,0,0.57);
+}
+
+.drop{
+  filter: drop-shadow(-2px 20px 19px #000000);
+}
