@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import Navbar from '../components/Navbar'
 import IntroSection from '../components/IntroSection'
 import IntroServices from '../components/IntroServices'
-import Footer from '../components/footer'
+import FooterComponent from '../components/FooterComponent'
 const Home = () => {
   useEffect(()=>{
     document.title = 'Tolobs Marine | Home'
@@ -16,7 +16,7 @@ const Home = () => {
         </div>
         <div className='reverse-gradient'>
             <IntroServices/>
-            <Footer/>
+            <FooterComponent/>
         </div>
     </div>
   )

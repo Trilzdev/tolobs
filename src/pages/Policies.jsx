@@ -1,11 +1,8 @@
 import React, { useEffect } from 'react'
-import ImageForCompany from '../components/ImageForCompany'
 import Navbar from '../components/Navbar'
-import Footer from '../components/footer'
-import ship from '../../public/solutions.jpg'
-import CareerSection from '../components/CareerSection'
 import CarouselForPolicy from '../components/CarousellForPolicy'
 import IntroSectionForPolicy from '../components/IntroSectionForPolicy'
+import FooterComponent from '../components/FooterComponent'
 const Policies = () => {
     useEffect(()=>{
         document.title = 'Tolobs Marine | Careers'
@@ -18,7 +15,7 @@ const Policies = () => {
             </div>
             <div className='reverse-gradient'>
                 <CarouselForPolicy/>
-                <Footer />
+                <FooterComponent />
             </div>
         </div>
     )

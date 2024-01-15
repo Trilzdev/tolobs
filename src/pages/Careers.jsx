@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import ImageForCompany from '../components/ImageForCompany'
 import Navbar from '../components/Navbar'
-import Footer from '../components/footer'
 import ship from '../../public/ship-careers.png'
 import CareerSection from '../components/CareerSection'
+import FooterComponent from '../components/FooterComponent'
 const Careers = () => {
     useEffect(()=>{
         document.title = 'Tolobs Marine | Careers'
@@ -16,7 +16,7 @@ const Careers = () => {
             </div>
             <div className='reverse-gradient'>
                 <CareerSection/>
-                <Footer />
+                <FooterComponent />
             </div>
         </div>
     )

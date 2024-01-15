@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import Navbar from '../components/Navbar'
-import Footer from '../components/footer'
 import shipping from '../../public/shipping-depot.jpg'
 import CarouselForService from '../components/CarouselForService'
 import ImageForServicess from '../components/ImageForServices'
+import FooterComponent from '../components/FooterComponent'
 const Services = () => {
   useEffect(()=>{
     document.title = 'Tolobs Marine | Services'
@@ -16,7 +16,7 @@ const Services = () => {
         </div>
         <div className='reverse-gradient'>
             <CarouselForService/>
-            <Footer/>
+            <FooterComponent/>
         </div>
     </div>
   )

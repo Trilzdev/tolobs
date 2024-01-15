@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import ImageForCompany from '../components/ImageForCompany'
 import Navbar from '../components/Navbar'
-import Footer from '../components/footer'
 import ship from '../../public/contact_ship.png'
 import CareersSection from '../components/ContactSection'
+import FooterComponent from '../components/FooterComponent'
 
 const Contact = () => {
     useEffect(()=>{
@@ -17,7 +17,7 @@ const Contact = () => {
             </div>
             <div className='reverse-gradient'>
                 <CareersSection/>
-                <Footer />
+                <FooterComponent/>
             </div>
         </div>
     )
