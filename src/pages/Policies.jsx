@@ -8,12 +8,12 @@ const Policies = () => {
         document.title = 'Tolobs Marine | Careers'
       },[])
     return (
-        <div>
-            <div className='intro'>
+        <div className='intro'>
+            <div className=''>
                 <Navbar active={"policies"} />
                 <IntroSectionForPolicy/>
             </div>
-            <div className='reverse-gradient'>
+            <div className=''>
                 <CarouselForPolicy/>
                 <FooterComponent />
             </div>

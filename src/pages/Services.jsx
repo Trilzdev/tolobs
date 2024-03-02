@@ -9,12 +9,12 @@ const Services = () => {
     document.title = 'Tolobs Marine | Services'
   },[])
   return (
-    <div>
-        <div className='intro'>
+    <div className='intro'>
+        <div className=''>
             <Navbar active={'services'}/>
-            <ImageForServicess image={shipping}/>
+            <ImageForServicess />
         </div>
-        <div className='reverse-gradient'>
+        <div className=''>
             <CarouselForService/>
             <FooterComponent/>
         </div>

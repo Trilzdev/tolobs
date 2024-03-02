@@ -52,29 +52,29 @@ const ship_names = [
 
 const Vessels = () => {
     return (
-        <div className='flex flex-col gap-8 text-[#286189]'>
+        <div className='flex flex-col gap-4 text-neutral-100 buttongradient p-4 pb-16'>
             <div>
                 <h1 className=' text-4xl max-md:text-2xl max-sm:text-xl'>
-                    VESSELS HANDLED
+                    <span className='title'>
+                        VESSELS HANDLED
+                    </span>
                 </h1>
             </div>
-            <div className='text-xl flex flex-col gap-4 max-sm:text-base'>
+            <div className='text-xl flex flex-col gap-[20px] max-sm:text-base text-neutral-300'>
                 <p>
                     As one of the leading shipping agencies in Nigeria, we have handled various vessels both Motor tanker
                     and Ocean going vessels some of which include the following:
                 </p>
+                <div className='text-xl max-sm:text-base grid grid-cols-2 max-sm:grid-cols-1 pl-4'>
+                    {
+                        ship_names.map((item) => {
+                            return (
+                                <p className='custom'>{item}</p>
+                            )
+                        })
+                    }
+                </div>
             </div>
-            <ul className='text-xl max-sm:text-base grid grid-cols-2 max-sm:grid-cols-1 list-disc pl-4'>
-                {
-                    ship_names.map((item) => {
-                        return (
-                            <div>
-                                <li>{item}</li>
-                            </div>
-                        )
-                    })
-                }
-            </ul>
         </div>
     )
 }

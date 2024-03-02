@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { GrSubtractCircle,GrAddCircle } from "react-icons/gr";
-import {motion,AnimatePresence} from 'framer-motion'
+import { GrSubtractCircle, GrAddCircle } from "react-icons/gr";
+import { motion, AnimatePresence } from 'framer-motion'
 const personnelList = [
   {
     "title": "Chairman/CEO",
@@ -26,13 +26,7 @@ const personnelList = [
     "experience": "Worked in banking and financial sectors. Co-founder of Tolobs Marine Services Ltd. Initially CEO and later MD/ED, Finance & Administration."
   },
   {
-    "title": "General Manager",
-    "name": "Emmanuel Omonayabipi",
-    "education": "Advanced Diploma in Maritime Studies (Centre for Business, Greenwich London); Graduate Diploma in Transport Studies (London College for Advanced Transport Studies and City University London)",
-    "experience": "Over 20 years in the Shipping and Marine industry. General Manager at Tolobs Marine."
-  },
-  {
-    "title": "Operations Manager",
+    "title": "General Manager Operations",
     "name": "Silas Etere Jumbo",
     "education": "HND in Office Management Technology - Yaba College of Technology",
     "experience": "Over 8 years in marine operations. Joined Tolobs Marine in 2011."
@@ -44,72 +38,63 @@ const personnelList = [
     "experience": "Over 8 years in marine operations. Joined Tolobs Marine in 2009 as an Operations Officer."
   },
   {
-    "title": "Company Secretary",
-    "name": "Barrister Sobere Biambo",
-    "experience": "Over 26 years of legal, company, and allied matters experience."
-  },
-  {
     "title": "Accounts, Invoice/Billing & ICT",
     "name": "Oladeji Tosin",
     "education": "Graduate of The Polytechnic Ibadan",
     "experience": "20 years of experience in IT-based solutions and marine operations. Joined Tolobs Marine in 2015 as the Accounts Officer and Head of ICT solutions."
-  },
-  {
-    "title": "Marketing Officer",
-    "name": "Soala Igonikon",
-    "education": "BSc, Business Administration (Marketing) - Rivers State University of Science and Technology",
-    "experience": "Joined Tolobs Marine in 2007 as the Marketing Officer."
   }
 ]
 const DropDown = ({ title, name, education, experience }) => {
   const [isDropDownOpen, setIsDropDownOpen] = useState(false)
   return (
-    <div className='text-xl border-t border-b border-neutral-800'>
-      <div className=' flex items-center justify-between w-full bg-[#6a9eb2] p-4'>
+    <div className='text-xl balpha borderalpha'>
+      <div className=' flex items-center justify-between w-full shadow-lg  p-4'>
         <p className=' font-semibold text-2xl max-sm:text-xl'>{title}</p>
         {
           isDropDownOpen ?
             (
-              <GrSubtractCircle className='text-4xl cursor-pointer' onClick={() => { setIsDropDownOpen((prev) => (!prev)) }}/>
-              ) :
-              (
-                <GrAddCircle className='text-4xl cursor-pointer' onClick={() => { setIsDropDownOpen((prev) => (!prev)) }}/>
+              <GrSubtractCircle className='text-4xl cursor-pointer' onClick={() => { setIsDropDownOpen((prev) => (!prev)) }} />
+            ) :
+            (
+              <GrAddCircle className='text-4xl cursor-pointer' onClick={() => { setIsDropDownOpen((prev) => (!prev)) }} />
             )
         }
       </div>
       <AnimatePresence>
-      {
-        isDropDownOpen && (
-            <motion.div 
-            initial={{height:0}}
-            animate={{height:'auto'}}
-            exit={{height:0}}
-            className='flex gap-2 flex-col select-none p-4 max-sm:text-base '>
-              <p><span className='font-semibold block'>Name</span>{name}</p>
-              <p><span className='font-semibold block'>Education</span>{education}</p>
-              <p><span className='font-semibold block'>Experience</span>{experience}</p>
-            </motion.div>
-        )
-      }
-      {
-      !isDropDownOpen &&  (
-
-        <div className='w-full h-[0.01px] invisible'>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit beatae corporis, aperiam exercitationem quidem, incidunt quibusdam in accusantium cumque cupiditate iusto accusamus architecto modi nostrum velit odio possimus porro sit.</p>
-        </div>
-      )
-      }
+          {
+            isDropDownOpen && (
+              <motion.div
+                initial={{ height: 0 ,overflow:'hidden'}}
+                animate={{ height: 'auto' }}
+                exit={{ height: 0 }}
+                transition={{duration:'0.6'}}
+                className='flex gap-[20px] flex-col select-none p-4 max-sm:text-base '>
+                <p className='text-neutral-200'><span className='font-semibold block text-neutral-500'>Name</span>{name}</p>
+                <p className='text-neutral-200'><span className='font-semibold block text-neutral-500'>Education</span>{education}</p>
+                <p className='text-neutral-200'><span className='font-semibold block text-neutral-500'>Experience</span>{experience}</p>
+              </motion.div>
+            )
+          }
       </AnimatePresence>
+        {
+          !isDropDownOpen && (
 
+            <div className='w-full h-[0.01px] invisible'>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit beatae corporis, aperiam exercitationem quidem, incidunt quibusdam in accusantium cumque cupiditate iusto accusamus architecto modi nostrum velit odio possimus porro sit.</p>
+            </div>
+          )
+        }
     </div>
   )
 }
 const MeetOurLeadership = () => {
   return (
-    <div className='flex flex-col gap-8 text-[#286189]'>
+    <div className='flex flex-col gap-4 text-neutral-100 buttongradient p-4 pb-16'>
       <div>
-        <h1 className=' text-4xl max-md:text-2xl max-sm:text-xl'>
-          MEET OUR LEADERSHIP
+        <h1 className=' text-4xl max-md:text-2xl max-sm:text-xl font-medium text-neutral-300'>
+          <span className='title'>
+            MEET OUR LEADERSHIP
+          </span>
         </h1>
       </div>
       <div className='flex flex-col '>

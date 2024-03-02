@@ -9,12 +9,12 @@ const Careers = () => {
         document.title = 'Tolobs Marine | Careers'
       },[])
     return (
-        <div>
-            <div className='intro'>
+        <div className='intro'>
+            <div className=''>
                 <Navbar active={'careers'} />
                 <ImageForCompany image={ship} />
             </div>
-            <div className='reverse-gradient'>
+            <div className=''>
                 <CareerSection/>
                 <FooterComponent />
             </div>

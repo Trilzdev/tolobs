@@ -10,12 +10,12 @@ const OurCompany = () => {
     document.title = 'Tolobs Marine | Our Company'
   },[])
   return (
-    <div>
-        <div className='intro'>
+    <div className='intro'>
+        <div className=''>
             <Navbar active={'company'}/>
             <ImageForCompany image={ship}/>
         </div>
-        <div className='reverse-gradient'>
+        <div className=''>
             <CarouselForCompany/>
             <FooterComponent/>
         </div>

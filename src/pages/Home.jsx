@@ -9,12 +9,12 @@ const Home = () => {
 
   },[])
   return (
-    <div className=' '>
-        <div className='intro'>
+    <div className='intro '>
+        <div className=''>
             <Navbar active={'home'}/>
             <IntroSection/>
         </div>
-        <div className='reverse-gradient'>
+        <div className=''>
             <IntroServices/>
             <FooterComponent/>
         </div>

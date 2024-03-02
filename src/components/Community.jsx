@@ -2,7 +2,7 @@ import React from 'react'
 
 const Community = () => {
   return (
-    <div className='flex flex-col gap-8 text-[#286189]'>
+    <div className='flex flex-col gap-8 text-neutral-100'>
       <div>
         <h1 className=' text-4xl max-md:text-2xl max-sm:text-xl'>
           COMMUNITY AFFAIRS POLICY
