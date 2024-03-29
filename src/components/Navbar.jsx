@@ -1,23 +1,26 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import logo from '../../public/logo.png'
 import { MdMenu,MdClose } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 import {motion,AnimatePresence} from 'framer-motion'
 const Navbar = ({ active }) => {
   const [menuOpen, setMenuOpen] = useState(false)
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top-left corner of the page
+  }, []);
   return (
-    <nav className='balpha px-80 max-md:px-8 max-lg:px-16 max-2xl:px-32 max-sm:px-4  max-xl:px-16 py-4 flex justify-between text-white items-center relative'>
-      <div className='h-18 max-md:h-12 relative' data-aos="fade-up" data-aos-duration='1000'>
+    <nav className='bnav px-80 max-md:px-8 max-lg:px-16 max-2xl:px-32 max-sm:px-4  max-xl:px-16 py-4 flex justify-between text-white items-center relative'>
+      <div className='h-18 max-md:h-10 relative h-12 my-2 max-md:my-0 p-2 bg-[#26805d] rounded-3xl px-8' data-aos-duration='1000'>
         <Link to="/">
           <img src={logo} alt="" className='h-full' loading='eager'/>
         </Link>
       </div>
       <div className='text-xl flex gap-6 max-md:hidden'>
-        <Link to="/" className={`hover:text-yellow-400 ${active === 'home' ? 'text-yellow-400' : ''}`}>HOME</Link>
-        <Link to="/our-company" className={`hover:text-yellow-400 ${active === 'company' ? 'text-yellow-400' : ''}`}>OUR COMPANY</Link>
-        <Link to="/services" className={`hover:text-yellow-400 ${active === 'services' ? 'text-yellow-400' : ''}`}>SERVICES</Link>
-        <Link to="/careers" className={`hover:text-yellow-400 ${active === 'careers' ? 'text-yellow-400' : ''}`}>CAREERS</Link>
-        <Link to="/contact" className={`hover:text-yellow-400 ${active === 'contactus' ? 'text-yellow-400' : ''}`}>CONTACT</Link>
+        <Link to="/" className={`hover:text-yellow-400 hover:scale-110 duration-200 ease-in-out ${active === 'home' ? 'text-yellow-400' : ''}`}>HOME</Link>
+        <Link to="/our-company" className={`hover:text-yellow-400 hover:scale-110 duration-200 ease-in-out ${active === 'company' ? 'text-yellow-400' : ''}`}>OUR COMPANY</Link>
+        <Link to="/services" className={`hover:text-yellow-400 hover:scale-110 duration-200 ease-in-out ${active === 'services' ? 'text-yellow-400' : ''}`}>SERVICES</Link>
+        <Link to="/careers" className={`hover:text-yellow-400 hover:scale-110 duration-200 ease-in-out ${active === 'careers' ? 'text-yellow-400' : ''}`}>CAREERS</Link>
+        <Link to="/contact" className={`hover:text-yellow-400 hover:scale-110 duration-200 ease-in-out ${active === 'contactus' ? 'text-yellow-400' : ''}`}>CONTACT</Link>
       </div>
       <div className={`text-4xl text-neutral-300 cursor-pointer p-2 md:hidden duration-200 ${menuOpen === true? 'bg-gray-800 text-white': ''}`} >
         {

@@ -26,7 +26,7 @@ const FooterComponent = () => {
                 <Link to="/" className='hover:text-yellow-500 duration-200 active:text-neutral-300' >Home</Link>
                 <Link to="/services" className='hover:text-yellow-500 duration-200 active:text-neutral-300' >Services</Link>
                 <Link to="/careers" className='hover:text-yellow-500 duration-200 active:text-neutral-300' >Career</Link>
-                <Link className='hover:text-yellow-500 duration-200 active:text-neutral-300' >Contact</Link>
+                <Link to='/contact'className='hover:text-yellow-500 duration-200 active:text-neutral-300' >Contact</Link>
               </div>
             </div>
             <div className='flex flex-col gap-4 text-lg font-semibold'>
@@ -41,7 +41,7 @@ const FooterComponent = () => {
             <img src={logo} alt="" className='h-full' />
           </div>
         </div>
-        <div className=' py-3 text-center'>
+        <div className=' py-3 text-center text-lg font-medium max-sm:text-base'>
           <p>COPYRIGHT © 2024 : TOLOBS MARINE SERVICES LIMITED</p>
         </div>
       </div>

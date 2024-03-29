@@ -28,10 +28,9 @@ const contactsArray = [
     {
         category: 'Contact',
         emails: [
-            'osaki.j.braide@tolobsmarinegrp.com ',
-            'matthew@tolobsmarinegrp.com ',
-            'alafa@tolobsmarinegrp.com ',
-            'silas.j@tolobsmarinegrp.com '
+            'osaki-braide@tolobsmarinegrp.com',
+            'alafa-a.romeo@tolobsmarinegrp.com ',
+            'silas.etere@tolobsmarinegrp.com'
         ]
     }
 ];
@@ -56,7 +55,7 @@ const ContactSection = () => {
                             <p>Port Harcourt</p>
                             <p>Rivers State</p>
                             <p>Nigeria</p>
-                            <p>Tel: +234 (0)84 775 480</p>
+                            <p>Tel: +234 (0)80 3304 0181 / +234 (0)80 3461 9286</p>
                             <p>Email: <a href="mailto:opsphc@tolobsmarinegrp.com ">opsphc@tolobsmarinegrp.com </a></p>
                             <p>Inquiry: <a href="mailto:info@tolobsmarinegrp.com ">info@tolobsmarinegrp.com </a></p>
                         </address>
@@ -65,7 +64,7 @@ const ContactSection = () => {
                             <p>1, Commercial Road,</p>
                             <p>1st Floor Left Wing, Aries Block, Eleganza Plaza,</p>
                             <p>Apapa Lagos- Nigeria.</p>
-                            <p>Tel:  +234(0)1 741 9076</p>
+                            <p>Tel: +234 (0)90 5190 3878</p>
                             <p>Email: <a href="mailto:opslagos@tolobsmarinegrp.com ">opslagos@tolobsmarinegrp.com </a></p>
                         </address>
                         <div className=' flex flex-col gap-4'>

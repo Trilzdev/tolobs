@@ -27,7 +27,7 @@
 
 .intro {
   background: rgb(13, 116, 77);
-  background: linear-gradient(160deg,  rgb(30, 50, 116),rgb(22, 90, 87), rgb(30, 50, 116),rgb(22, 90, 87), rgb(30, 50, 116),rgb(22, 90, 87));
+  background: linear-gradient(160deg,  rgb(37, 116, 30),rgb(22, 90, 87), rgb(30, 116, 95),rgb(22, 90, 87), rgb(30, 50, 116),rgb(22, 90, 87));
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   
@@ -77,7 +77,21 @@
 
 .balpha {
   background-color: #0a1a24;
+  
   /* border-bottom: #2b3d3d solid 1px; */
+}
+
+.link_active{
+  position: relative;
+}
+
+.link_active:active{
+  content: '';
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  background: yellow;
+  width: 100%;
 }
 
 .balpha::after {
@@ -90,6 +104,7 @@
   bottom: 0;
   left: 0;
 }
+
 
 .borderalpha {
   position: relative;
